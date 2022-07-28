@@ -9,5 +9,9 @@
 <button><a href="{{ url_for('index') }}">Главная</a></button>
 <button><a href="{{ url_for('datalistresourcesql') }}">Выдача данных SQL</a></button>
 <button><a href="{{ url_for('datalistresourcepandas') }}">Выдача данных Pandas</a></button>
+<h1>Полученные данные</h1>
+{% for data in context %}
+<p>{{ data.rep_dt }} - {{ data.delta }}</p>
+{% endfor %}
 </body>
 </html>

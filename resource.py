@@ -6,7 +6,7 @@ from flask_restful import Resource
 from psycopg2.extras import RealDictCursor
 import psycopg2
 
-from main import DataTable
+from app import DataTable
 
 
 class DataListResourceSql(Resource):
